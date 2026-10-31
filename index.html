@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Mosaad Elemy — Mechanical BIM Engineer</title>
+<meta name="description" content="Mechanical BIM Engineer specialized in HVAC, firefighting and plumbing. Revit, Navisworks, MEP coordination. Projects across Egypt and Saudi Arabia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0c26;--bg2:#14133a;--card:#181745;--gold:#e0b872;--tx:#f2f2f7;--mu:#a9a9c6;--bd:#2a2960}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Montserrat,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:20;background:rgba(13,12,38,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;color:var(--gold)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav ul a:hover{color:var(--gold)}
+@media(max-width:700px){nav ul{gap:12px;font-size:12px}}
+section{padding:80px 0}
+h2{font-size:clamp(26px,4vw,38px);font-weight:800;margin-bottom:8px}
+h2 span,.gold{color:var(--gold)}
+.sub{color:var(--mu);margin-bottom:36px}
+.hero{padding:70px 0 50px;background:radial-gradient(circle at 80% 10%,#25236b 0,transparent 55%)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero .btns,.hero .meta{justify-content:center}.avatar{order:-1;margin:auto}}
+.hello{color:var(--gold);font-weight:600;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,58px);font-weight:800;line-height:1.1;margin:10px 0}
+.role{font-size:20px;color:var(--gold);font-weight:700;margin-bottom:14px}
+.hero p{color:var(--mu);max-width:560px}
+.btns{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{padding:12px 24px;border-radius:30px;font-weight:700;font-size:14px;border:2px solid var(--gold);transition:.2s;cursor:pointer;background:none;color:var(--tx)}
+.btn.p{background:var(--gold);color:var(--bg)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(224,184,114,.25)}
+.meta{display:flex;gap:18px;margin-top:22px;font-size:13px;color:var(--mu);flex-wrap:wrap}
+.avatar{width:300px;height:300px;max-width:80vw;border-radius:50%;border:4px solid var(--gold);box-shadow:0 0 0 12px rgba(224,184,114,.1);overflow:hidden;background:var(--card);display:grid;place-items:center;font-size:90px;font-weight:800;color:var(--gold)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:50px}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:20px;text-align:center}
+.stat b{display:block;font-size:34px;color:var(--gold)}
+.stat small{color:var(--mu)}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:30px}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:24px}
+.box h3{color:var(--gold);margin-bottom:10px;font-size:17px}
+.tl{border-left:2px solid var(--bd);margin-left:8px}
+.job{position:relative;padding:0 0 34px 28px}
+.job:before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--bg)}
+.job h3{font-size:18px}
+.job .co{color:var(--gold);font-weight:600;font-size:14px}
+.job ul{margin:10px 0 0 18px;color:var(--mu);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tag{font-size:12px;padding:4px 12px;border-radius:20px;background:var(--bg2);border:1px solid var(--bd);color:var(--mu)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.f{padding:8px 18px;border-radius:30px;border:1px solid var(--bd);background:none;color:var(--mu);cursor:pointer;font:600 13px Montserrat}
+.f.on,.f:hover{background:var(--gold);color:var(--bg);border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:24px;cursor:pointer;transition:.25s}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.card .loc{font-size:12px;color:var(--gold);font-weight:600}
+.card h3{margin:6px 0 8px;font-size:19px}
+.card p{font-size:14px;color:var(--mu)}
+.card .more{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--gold)}
+.modal{position:fixed;inset:0;background:rgba(5,5,20,.85);display:none;place-items:center;z-index:50;padding:16px}
+.modal.open{display:grid}
+.mbox{background:var(--bg2);border:1px solid var(--gold);border-radius:20px;max-width:680px;width:100%;max-height:88vh;overflow:auto;padding:30px;position:relative}
+.mbox h3{font-size:24px}
+.mbox h4{color:var(--gold);margin:18px 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:1px}
+.mbox ul{margin-left:18px;color:var(--mu);font-size:14px}
+.x{position:absolute;right:18px;top:12px;font-size:28px;background:none;border:0;color:var(--tx);cursor:pointer}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.certs li{list-style:none;padding:10px 0;border-bottom:1px solid var(--bd);font-size:14px}
+.certs li:before{content:"✦ ";color:var(--gold)}
+.contact{text-align:center}
+.cl{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+footer{text-align:center;padding:26px;color:var(--mu);font-size:13px;border-top:1px solid var(--bd)}
+.rv{opacity:0;transform:translateY(24px);transition:.7s}
+.rv.in{opacity:1;transform:none}
+body.ar{font-family:Cairo,Montserrat,sans-serif}
+[dir=rtl] .tl{border-left:0;border-right:2px solid var(--bd);margin:0 8px 0 0}
+[dir=rtl] .job{padding:0 28px 34px 0}
+[dir=rtl] .job:before{left:auto;right:-8px}
+[dir=rtl] .job ul,[dir=rtl] .mbox ul{margin:10px 18px 0 0}
+[dir=rtl] .x{right:auto;left:18px}
+#lang{padding:5px 14px}
+.cf{max-width:560px;margin:30px auto 0;display:grid;gap:12px;text-align:start}
+.cf input,.cf textarea{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font:inherit}
+.cf input:focus,.cf textarea:focus{outline:none;border-color:var(--gold)}
+#st{font-size:14px;color:var(--gold);min-height:20px}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">ALI ELEMY</a>
+<ul><li><a href="#about">About</a></li><li><a href="#exp">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li><li><button class="f" id="lang">العربية</button></li></ul></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div>
+<div class="hello">Hello, I'm</div>
+<h1>Ali Mosaad Elemy</h1>
+<div class="role">Mechanical BIM Engineer</div>
+<p>Mechanical engineer specialized in HVAC, firefighting and plumbing. I deliver efficient, code-compliant designs and clash-free BIM models using Revit, Navisworks and MEP coordination — on projects across Egypt and Saudi Arabia.</p>
+<div class="btns"><a class="btn p" href="#projects">View Projects</a><a class="btn" href="#contact">Get In Touch</a><a class="btn" href="Ali_Elemy_Portfolio.pdf" download>Download CV</a></div>
+<div class="meta"><span>📍 Cairo, Egypt</span><span>🎓 B.Sc. Mechanical Power, Benha University</span></div>
+</div>
+<div class="avatar"><img src="profile.jpg" alt="Ali Mosaad Elemy" onerror="this.remove();this.parentNode.textContent='AE'"></div>
+</div>
+<div class="wrap"><div class="stats">
+<div class="stat"><b data-n="11">0</b><small>Key Projects</small></div>
+<div class="stat"><b data-n="4">0</b><small>Companies</small></div>
+<div class="stat"><b data-n="2">0</b><small>Countries</small></div>
+<div class="stat"><b data-n="3">0</b><small>MEP Disciplines</small></div>
+</div></div>
+</header>
+
+<section id="about"><div class="wrap rv">
+<h2>About <span>Me</span></h2><p class="sub">Design + BIM + site support, all in one engineer.</p>
+<div class="about">
+<div class="box"><h3>Who I am</h3><p style="color:var(--mu)">I'm a Mechanical BIM Engineer with hands-on experience in HVAC, firefighting and plumbing design, from load calculations and equipment selection to Revit modeling, shop drawings, BOQs and as-built documentation. I coordinate with architectural, structural and electrical teams, run clash detection in Navisworks, and support execution on site through RFIs and submittals.</p>
+<div class="tags"><span class="tag">HVAC</span><span class="tag">Firefighting (NFPA)</span><span class="tag">Plumbing (IPC)</span><span class="tag">BIM Coordination</span><span class="tag">Shop Drawings</span><span class="tag">BOQ</span></div></div>
+<div class="box"><h3>Education</h3><p><b>B.Sc. Mechanical Power Engineering</b><br><span style="color:var(--mu)">Benha University – Shoubra Faculty of Engineering<br>2019 – 2024 · Grade: Good</span></p>
+<h3 style="margin-top:18px">Codes &amp; Standards</h3><div class="tags"><span class="tag">ASHRAE</span><span class="tag">IPC</span><span class="tag">NFPA</span><span class="tag">SBC (Saudi)</span><span class="tag">Egyptian Codes</span></div></div>
+</div></div></section>
+
+<section id="exp" style="background:var(--bg2)"><div class="wrap rv">
+<h2>Work <span>Experience</span></h2><p class="sub">My journey so far.</p>
+<div class="tl">
+<div class="job"><h3>Mechanical BIM Digital Engineer</h3><div class="co">Hassan Allam Constructions · Mar 2026 – Present</div>
+<ul><li>Develop 3D BIM models for mechanical systems in Revit; prepare and review shop drawings.</li><li>Submit Model and Material Submittals and resolve design issues.</li><li>Coordination &amp; clash detection in Navisworks; collaboration via Autodesk Construction Cloud and Revizto.</li><li>On-site technical support, RFIs, as-built drawings and quantity extraction for project control.</li></ul>
+<div class="tags"><span class="tag">Afreximbank – New Administrative Capital</span></div></div>
+<div class="job"><h3>Mechanical BIM Engineer</h3><div class="co">Alfanar Projects · Jun 2025 – Mar 2026</div>
+<ul><li>Multi-discipline coordination and accurate clash detection using Navisworks.</li><li>Prepared and reviewed technical documentation and shop drawings in Revit per specs and codes.</li><li>Technical support: reviewing calculations, resolving design issues, delivering data.</li></ul>
+<div class="tags"><span class="tag">King Salman Park – Riyadh</span><span class="tag">Turtle Bay Hospital – Red Sea</span></div></div>
+<div class="job"><h3>Mechanical BIM Design Engineer</h3><div class="co">EGEC · Oct 2024 – Jun 2025</div>
+<ul><li>Designed and modeled firefighting and plumbing systems.</li><li>Created shop drawings and BOQs.</li><li>Design reviews and clash detection to ensure efficiency, safety and constructability.</li></ul>
+<div class="tags"><span class="tag">Edge Stone MU4-2</span><span class="tag">Kempinski AlQeshan Hotel</span><span class="tag">D.Baymount C20</span><span class="tag">Tiffany Business Park</span></div></div>
+<div class="job"><h3>Mechanical BIM Engineer</h3><div class="co">EEPM – Dorra Constructions · Jul 2024 – Sep 2024</div>
+<ul><li>Designed and modeled HVAC, firefighting and plumbing systems.</li><li>Shop drawings and BOQs using Revit, Navisworks and Dynamo.</li></ul>
+<div class="tags"><span class="tag">Crown Mall</span><span class="tag">Badya Mosque</span><span class="tag">Admin Building (B, D, F)</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap rv">
+<h2>Key <span>Projects</span></h2><p class="sub">Click any project for the full breakdown.</p>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="skills" style="background:var(--bg2)"><div class="wrap rv">
+<h2>Skills &amp; <span>Certifications</span></h2><p class="sub">Tools, knowledge and training.</p>
+<div class="skills">
+<div class="box"><h3>BIM &amp; CAD</h3><div class="tags"><span class="tag">Revit</span><span class="tag">AutoCAD</span><span class="tag">Navisworks</span><span class="tag">Dynamo</span><span class="tag">Revizto</span><span class="tag">Autodesk Construction Cloud</span><span class="tag">PowerPi</span></div></div>
+<div class="box"><h3>Engineering Software</h3><div class="tags"><span class="tag">HAP</span><span class="tag">Elite Fire</span><span class="tag">Duct Sizer</span><span class="tag">Pipe Sizer</span><span class="tag">SolidWorks</span><span class="tag">Excel / MS Office</span></div></div>
+<div class="box"><h3>Professional</h3><div class="tags"><span class="tag">MEP Design &amp; Coordination</span><span class="tag">Problem-solving</span><span class="tag">Teamwork</span><span class="tag">Project Planning</span><span class="tag">Technical Documentation</span><span class="tag">QA &amp; Compliance</span></div></div>
+<div class="box"><h3>Certifications</h3><ul class="certs"><li>MEP BIM Diploma – KAITECH</li><li>BIM Application Development – KAITECH</li><li>MEP Course (HVAC, Firefighting, Plumbing)</li><li>PMP – AmCham</li><li>Intensive English Course – AUC</li></ul></div>
+</div></div></section>
+
+<section id="contact" class="contact"><div class="wrap rv">
+<h2>Let's build something <span>great together</span></h2>
+<p class="sub">Open to BIM engineering and MEP design opportunities.</p>
+<form class="cf" id="cf"><input name="name" required placeholder="Your name" data-en="Your name" data-ar="اسمك"><input name="email" type="email" required placeholder="Your email" data-en="Your email" data-ar="إيميلك"><textarea name="message" rows="5" required placeholder="Your message" data-en="Your message" data-ar="رسالتك"></textarea><button class="btn p" type="submit">Send Message</button><div id="st"></div></form>
+<div class="cl">
+<a class="btn" href="mailto:aly.elemy7@gmail.com">✉ aly.elemy7@gmail.com</a>
+<a class="btn" href="tel:+201220619380">📞 +20 1220 619 380</a>
+<a class="btn" id="li" href="https://www.linkedin.com/" target="_blank" rel="noopener">in LinkedIn</a>
+</div></div></section>
+
+<footer>© <span id="yr"></span> Ali Mosaad Elemy · Mechanical BIM Engineer · Cairo, Egypt</footer>
+
+<div class="modal" id="modal"><div class="mbox"><button class="x" id="close" aria-label="Close">×</button><div id="mc"></div></div></div>
+
+<script>
+// ====== EDIT HERE: your LinkedIn link ======
+document.getElementById('li').href='https://www.linkedin.com/in/YOUR-LINKEDIN-ID';
+// ====== EDIT HERE: projects data ======
+const P=[
+{n:'Afreximbank HQ',l:'New Administrative Capital, Egypt',t:'BIM',s:'3D BIM models for HVAC, plumbing and firefighting; submittals, RFIs and as-builts.',o:['Develop 3D BIM models for mechanical systems in Revit','Ensure deliverables comply with specifications','Coordinate mechanical, electrical and civil using digital tools'],r:['Prepared/reviewed shop drawings, Model & Material Submittals','Clash detection with Navisworks; collaboration via ACC and Revizto','On-site support, RFIs; as-builts and quantity extraction'],sw:'Revit, Revizto, ACC, Navisworks, Excel, PowerPi, Elite, HAP, Duct Sizer, Pipe Sizer'},
+{n:'King Salman Park (KSP)',l:'Riyadh, Saudi Arabia',t:'BIM',s:'Coordinated shop drawings for chilled water, firefighting, water supply and drainage.',o:['Fully coordinated shop drawings per specs and international standards','Support sustainable, recovery-based design','Constructible, clash-free mechanical systems'],r:['Detailed shop drawings for chilled water, firefighting, water and drainage','Hydraulic calculations, pipe sizing and pump selection','Recovery systems and sustainability principles; RFIs, submittals, as-builts'],sw:'Revit, Navisworks, Excel, Elite, HAP, Duct Sizer'},
+{n:'Turtle Bay Hospital',l:'The Red Sea, Saudi Arabia',t:'BIM',s:'MEP coordination and redesign across HVAC, plumbing, firefighting and medical gas.',o:['HVAC, ventilation, firefighting and plumbing coordination and redesign','Chilled water system redesign'],r:['Resolved clashes across HVAC, plumbing, firefighting and medical gas','Revised duct sizing, fans, AHU/FCU selection, chiller and pump calculations','Resized water, drainage and rainwater pipes; optimized sprinkler coverage and ZCV zoning per NFPA','Value engineering to cut cost while keeping code compliance'],sw:'Revit, Navisworks, HAP, Duct Sizer'},
+{n:'Kempinski AlQeshan Hotel',l:'Olaya, Riyadh, Saudi Arabia',t:'Design',s:'Recalculation of HVAC, plumbing and fire systems; chiller and pump selection.',o:['HVAC, ventilation and plumbing recalculations in Revit','Chilled water system design, selection and calculations'],r:['Recalculated loads in HAP; sized fans, outlets and ducts','Selected AHUs, FCUs, chillers and pumps','Verified fire protection against NFPA and Saudi Building Code (SBC)'],sw:'HAP, Duct Sizer'},
+{n:'Tiffany Business Park',l:'New Administrative Capital, Egypt',t:'Design',s:'Full HVAC, plumbing and wet firefighting redesign with split units.',o:['HVAC, ventilation, firefighting and plumbing redesign','Split units design, selection and modeling'],r:['HVAC loads in HAP; fans, ducts and split units selection','Fixture-unit sizing, water heaters, manholes and submersible pumps per Egyptian code','Complete NFPA wet fire system: sprinklers, FHCs, extinguishers, pipe sizing and ZCVs'],sw:'AutoCAD, HAP, Duct Sizer'},
+{n:'D.Baymount – C20 Building',l:'El Sokhna, Egypt',t:'Design',s:'Complete HVAC, water supply, drainage and firefighting design with pump sizing.',o:['Complete split-unit HVAC plus water supply, drainage and firefighting','Pump sizing with Elite software','Clash-free coordination across MEP'],r:['HVAC layout and equipment distribution','Pipe diameters for supply, firefighting and drainage (stacks and horizontal)','NFPA sprinkler distribution; drawings, hydraulic calcs, submittals and BOQ'],sw:'Revit, Navisworks, Excel, Elite, HAP'},
+{n:'Edge Stone Admin – MU4-2',l:'New Administrative Capital, Egypt',t:'BIM',s:'Firefighting and plumbing review, hydraulic pump calculations and coordination.',o:['Coordinate firefighting, plumbing and other MEP','Verify design accuracy per codes','Validate pump loads for firefighting, domestic and sump pumps'],r:['MEP coordination to avoid structural/architectural clashes','Reviewed sprinklers, standpipes, pump room, drainage and water supply','Hydraulic calculations for all pumps'],sw:'Revit, Navisworks, Excel'},
+{n:'Jeddah Warehouse',l:'Jeddah, Saudi Arabia',t:'Design',s:'Water supply, drainage and firefighting design with full BOQ and take-off.',o:['Complete plumbing and firefighting per international and SBC codes','Hydraulic calculations for pipes, pumps and sump pump','Comprehensive BOQ and quantity take-off'],r:['Concept and detailed drawings; pipe and pump sizing; technical submittals','Shop drawings and BOQ for pipes, fittings, valves and pumps','Coordination with HVAC, electrical and structural'],sw:'Revit, HAP, Elite Fire, Duct Sizer, Navisworks, Excel'},
+{n:'Atmata Factory',l:'Jeddah, Saudi Arabia',t:'BIM',s:'Industrial firefighting shop drawings, hydraulics, RFIs and as-builts.',o:['Prepare/review complete firefighting shop drawings for industrial systems','Pump sizing and hydraulic calculations','Clash-free coordination with other MEP'],r:['Shop drawing preparation and review','Pump and hydraulic calculations','On-site support, RFIs, submittals, BIM updates and as-builts'],sw:'Revit, Navisworks, Excel, Elite Fire'},
+{n:'Crown Commercial',l:'6th of October City, Giza, Egypt',t:'Design',s:'VRF system design, HVAC and plumbing recalculation, full piping and BOQs.',o:['HVAC, ventilation and plumbing recalculations in Revit','VRF design, selection and modeling; full piping layout and BOQs'],r:['Recalculated loads in HAP; sized fans, outlets and ducts','Selected VRF units, AHUs, FCUs and routed refrigerant piping','Fixture units, vent/waste sizing; BOQs from the model; ASHRAE/IPC compliance'],sw:'Revit, Navisworks, HAP, Duct Sizer'},
+{n:'Badya Mosque',l:'6th of October City, Giza, Egypt',t:'Design',s:'HVAC, ventilation and plumbing redesign with split units and water heaters.',o:['HVAC, ventilation and plumbing redesign','Split units design, selection and modeling'],r:['Redesigned loads in HAP; fans, outlets and ducts','Split unit selection; fixture units; central/individual water heater capacity','ASHRAE and IPC compliance; value engineering'],sw:'AutoCAD, HAP, Duct Sizer'}
+];
+const f=document.getElementById('filters'),g=document.getElementById('grid'),m=document.getElementById('modal'),mc=document.getElementById('mc');
+const cats=[['all','All'],['BIM','BIM & Coordination'],['Design','Design & Calculations']];
+cats.forEach(([k,v],i)=>{const b=document.createElement('button');b.className='f'+(i?'':' on');b.textContent=v;b.onclick=()=>{document.querySelectorAll('.f').forEach(x=>x.classList.remove('on'));b.classList.add('on');draw(k)};f.appendChild(b)});
+function draw(k){cur=k;g.innerHTML='';P.forEach((p,i)=>{if(k!=='all'&&p.t!==k)return;const c=document.createElement('div');c.className='card';c.innerHTML=`<div class="loc">📍 ${p.l}</div><h3>${p.n}</h3><p>${lang==='ar'?SA[i]:p.s}</p><span class="more">${t('View details →')}</span>`;c.onclick=()=>open(i);g.appendChild(c)})}
+function open(i){const p=P[i];mc.innerHTML=`<div class="loc gold">📍 ${p.l}</div><h3>${p.n}</h3><h4>${t('Objective')}</h4><ul>${p.o.map(x=>`<li>${x}</li>`).join('')}</ul><h4>${t('My Role')}</h4><ul>${p.r.map(x=>`<li>${x}</li>`).join('')}</ul><h4>${t('Software Used')}</h4><div class="tags">${p.sw.split(', ').map(x=>`<span class="tag">${x}</span>`).join('')}</div>`;m.classList.add('open')}
+document.getElementById('close').onclick=()=>m.classList.remove('open');
+m.onclick=e=>{if(e.target===m)m.classList.remove('open')};
+document.onkeydown=e=>{if(e.key==='Escape')m.classList.remove('open')};
+document.getElementById('yr').textContent=new Date().getFullYear();
+// counters + reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(x=>io.observe(x));
+document.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n;let c=0;const t=setInterval(()=>{c++;el.textContent=c;if(c>=n)clearInterval(t)},120)});
+
+// ====== EDIT HERE: Formspree form ID (see instructions) ======
+const FORM_ID='YOUR_FORM_ID';
+let lang='en',cur='all';
+const SA=['نماذج BIM ثلاثية الأبعاد للتكييف والسباكة والحريق، مع الـ submittals والـ RFIs والـ as-builts.','شوب دروينج منسقة لأنظمة المياه المثلجة والحريق والمياه والصرف.','تنسيق MEP وإعادة تصميم للتكييف والسباكة والحريق والغازات الطبية.','إعادة حساب التكييف والسباكة والحريق واختيار الشيللرات والطلمبات.','إعادة تصميم كاملة للتكييف والسباكة ونظام الحريق الرطب مع سبليت.','تصميم كامل للتكييف والمياه والصرف والحريق مع تصميم الطلمبات.','مراجعة الحريق والسباكة وحسابات الطلمبات والتنسيق.','تصميم المياه والصرف والحريق مع BOQ وحصر كامل.','شوب دروينج حريق لمصنع صناعي، حسابات هيدروليكية وRFIs وas-builts.','تصميم VRF وإعادة حساب التكييف والسباكة مع تمديدات كاملة وBOQ.','إعادة تصميم التكييف والسباكة مع وحدات سبليت وسخانات مياه.'];
+const AR={'ALI ELEMY':'علي العمي','About':'نبذة','Me':'عني','Experience':'الخبرات','Work':'','Projects':'المشاريع','Key':'أهم','Skills':'المهارات','Contact':'تواصل','Hello, I\'m':'أهلاً، أنا','Ali Mosaad Elemy':'علي مسعد العمي','Mechanical BIM Engineer':'مهندس ميكانيكا BIM','Mechanical engineer specialized in HVAC, firefighting and plumbing. I deliver efficient, code-compliant designs and clash-free BIM models using Revit, Navisworks and MEP coordination — on projects across Egypt and Saudi Arabia.':'مهندس ميكانيكا متخصص في التكييف والحريق والسباكة. بقدم تصميمات كفؤة ومطابقة للكودات ونماذج BIM بدون تعارضات باستخدام Revit وNavisworks وتنسيق MEP، في مشاريع في مصر والسعودية.','View Projects':'شوف المشاريع','Get In Touch':'تواصل معايا','Download CV':'تحميل السيرة الذاتية','📍 Cairo, Egypt':'📍 القاهرة، مصر','🎓 B.Sc. Mechanical Power, Benha University':'🎓 بكالوريوس هندسة القوى الميكانيكية، جامعة بنها','Key Projects':'مشروع رئيسي','Companies':'شركات','Countries':'دول','MEP Disciplines':'تخصصات MEP','Design + BIM + site support, all in one engineer.':'تصميم + BIM + دعم موقع، كله في مهندس واحد.','Who I am':'أنا مين','I\'m a Mechanical BIM Engineer with hands-on experience in HVAC, firefighting and plumbing design, from load calculations and equipment selection to Revit modeling, shop drawings, BOQs and as-built documentation. I coordinate with architectural, structural and electrical teams, run clash detection in Navisworks, and support execution on site through RFIs and submittals.':'أنا مهندس ميكانيكا BIM وعندي خبرة عملية في تصميم التكييف والحريق والسباكة، من حسابات الأحمال واختيار المعدات لحد نمذجة Revit والشوب دروينج والـ BOQ والـ as-built. بنسق مع المعماري والإنشائي والكهرباء، وبعمل clash detection في Navisworks، وبدعم التنفيذ في الموقع عن طريق الـ RFIs والـ submittals.','Education':'التعليم','Codes & Standards':'الكودات والمعايير','My journey so far.':'رحلتي لحد دلوقتي.','Mechanical BIM Digital Engineer':'مهندس ميكانيكا BIM ديجيتال','Mechanical BIM Design Engineer':'مهندس تصميم ميكانيكا BIM','Hassan Allam Constructions · Mar 2026 – Present':'حسن علام للإنشاءات · مارس 2026 – الآن','Alfanar Projects · Jun 2025 – Mar 2026':'الفنار للمشروعات · يونيو 2025 – مارس 2026','EGEC · Oct 2024 – Jun 2025':'EGEC · أكتوبر 2024 – يونيو 2025','EEPM – Dorra Constructions · Jul 2024 – Sep 2024':'EEPM – درة للإنشاءات · يوليو 2024 – سبتمبر 2024','Develop 3D BIM models for mechanical systems in Revit; prepare and review shop drawings.':'تطوير نماذج BIM ثلاثية الأبعاد للأنظمة الميكانيكية في Revit، وإعداد ومراجعة الشوب دروينج.','Submit Model and Material Submittals and resolve design issues.':'تقديم الـ Model والـ Material Submittals وحل مشاكل التصميم.','Coordination & clash detection in Navisworks; collaboration via Autodesk Construction Cloud and Revizto.':'التنسيق وكشف التعارضات في Navisworks، والتعاون عبر ACC وRevizto.','On-site technical support, RFIs, as-built drawings and quantity extraction for project control.':'دعم فني في الموقع وRFIs ورسومات as-built وحصر كميات لمتابعة المشروع.','Multi-discipline coordination and accurate clash detection using Navisworks.':'تنسيق بين التخصصات وكشف دقيق للتعارضات باستخدام Navisworks.','Prepared and reviewed technical documentation and shop drawings in Revit per specs and codes.':'إعداد ومراجعة المستندات الفنية والشوب دروينج في Revit حسب المواصفات والكودات.','Technical support: reviewing calculations, resolving design issues, delivering data.':'دعم فني: مراجعة الحسابات وحل مشاكل التصميم وتوفير البيانات.','Designed and modeled firefighting and plumbing systems.':'تصميم ونمذجة أنظمة الحريق والسباكة.','Created shop drawings and BOQs.':'إعداد الشوب دروينج وجداول الكميات BOQ.','Design reviews and clash detection to ensure efficiency, safety and constructability.':'مراجعات التصميم وكشف التعارضات لضمان الكفاءة والأمان وسهولة التنفيذ.','Designed and modeled HVAC, firefighting and plumbing systems.':'تصميم ونمذجة أنظمة التكييف والحريق والسباكة.','Shop drawings and BOQs using Revit, Navisworks and Dynamo.':'شوب دروينج وBOQ باستخدام Revit وNavisworks وDynamo.','Click any project for the full breakdown.':'دوس على أي مشروع تشوف التفاصيل كاملة.','All':'الكل','BIM & Coordination':'BIM والتنسيق','Design & Calculations':'التصميم والحسابات','Skills &':'المهارات و','Certifications':'الشهادات','Tools, knowledge and training.':'الأدوات والمعرفة والتدريب.','BIM & CAD':'BIM وCAD','Engineering Software':'برامج هندسية','Professional':'مهارات مهنية','Let\'s build something':'خلينا نبني حاجة','great together':'عظيمة سوياً','Open to BIM engineering and MEP design opportunities.':'متاح لفرص هندسة BIM وتصميم MEP.','Send Message':'ابعت الرسالة','Objective':'الهدف','My Role':'دوري','Software Used':'البرامج المستخدمة','View details →':'التفاصيل ←','Ali Mosaad Elemy · Mechanical BIM Engineer · Cairo, Egypt':'علي مسعد العمي · مهندس ميكانيكا BIM · القاهرة، مصر','Sent! I will reply soon.':'اتبعتت! هرد عليك قريب.','Something went wrong, try email.':'حصل خطأ، جرب الإيميل.'};
+const t=x=>lang==='ar'&&AR.hasOwnProperty(x)?AR[x]:x;
+const orig=new Map();
+function setLang(l){lang=l;document.documentElement.lang=l;document.documentElement.dir=l==='ar'?'rtl':'ltr';document.body.classList.toggle('ar',l==='ar');
+const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
+while(n=w.nextNode()){if(n.parentNode.closest('script,#lang,#st'))continue;const raw=orig.has(n)?orig.get(n):n.nodeValue,v=raw.trim();if(AR.hasOwnProperty(v)){orig.set(n,raw);n.nodeValue=l==='ar'?raw.replace(v,AR[v]):raw}}
+document.querySelectorAll('[data-ar]').forEach(e=>e.placeholder=l==='ar'?e.dataset.ar:e.dataset.en);
+document.getElementById('lang').textContent=l==='ar'?'English':'العربية';
+draw(cur);try{localStorage.setItem('lang',l)}catch(e){}}
+draw('all');
+document.getElementById('lang').onclick=()=>setLang(lang==='en'?'ar':'en');
+try{if(localStorage.getItem('lang')==='ar')setLang('ar')}catch(e){}
+document.getElementById('cf').onsubmit=async e=>{e.preventDefault();const f=e.target,st=document.getElementById('st'),d=new FormData(f);
+if(FORM_ID==='YOUR_FORM_ID'){location.href='mailto:aly.elemy7@gmail.com?subject='+encodeURIComponent('Portfolio message from '+d.get('name'))+'&body='+encodeURIComponent(d.get('message')+'\n\n'+d.get('email'));return}
+try{const r=await fetch('https://formspree.io/f/'+FORM_ID,{method:'POST',body:d,headers:{Accept:'application/json'}});if(r.ok){st.textContent=t('Sent! I will reply soon.');f.reset()}else throw 0}catch(x){st.textContent=t('Something went wrong, try email.')}};
+</script>
+</body>
+</html>
